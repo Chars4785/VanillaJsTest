@@ -1,7 +1,30 @@
 * {
     box-sizing: border-box;
   }
-  
+  .dark {
+    display: none;
+  }
+  @media (prefers-color-scheme: light) {
+    .dark {
+      display: none;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: lightgray;
+      background: black;
+    }
+    .light {
+      display: none;
+    }
+  }
+  body {
+    color: lightgray;
+    background: black;
+  }
+  .light {
+    display: none;
+  }
   body {
     display: flex;
     justify-content: center;
